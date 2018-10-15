@@ -63,7 +63,7 @@ Create, add, and save example
 	priors = b.distributions.parameter_collection(e1,e2,sigma,k1,k2)
 	
 	# Open the output file
-	f = b.smd.open(filename)
+	f = b.smd.load(filename)
 	
 	# Loop over all the molecules
 	for i in range(nmolecules):
