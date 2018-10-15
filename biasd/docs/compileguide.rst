@@ -53,7 +53,7 @@ To get a feeling for how long it takes the various versions of the BIASD likelih
 	
 	# Switch to the C version and test
 	# Note: will default to GSL over pure C
-	b.likelihood.use_C_ll()
+	b.likelihood.use_c_ll()
 	b.likelihood.test_speed(10,5000)
 	
 	# Switch to the CUDA version and test
