@@ -48,7 +48,7 @@ sampler, burned_positions = b.mcmc.burn_in(sampler,initial_positions,nsteps=100)
 ## Run 100 steps starting at the burned-in positions. Timing data will provide an idea of how long each step takes
 sampler = b.mcmc.run(sampler,burned_positions,nsteps=100,timer=True)
 
-## Continue on from step 100 for another 900 steps. Don't display timing.
+## Continue on from step 100 for another 900 steps. Don't display timing. May need around 20000 steps to converge.
 sampler = b.mcmc.continue_run(sampler,900,timer=False)
 
 ## Get uncorrelated samples from the chain by skipping samples according to the autocorrelation time of the variable with the largest autocorrelation time
